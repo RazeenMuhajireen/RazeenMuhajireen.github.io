@@ -1,4 +1,113 @@
-Hello World
-Test
-Test3
-test5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .project-thumbnail {
+      width: calc(33.33% - 10px);
+      margin-bottom: 20px;
+    }
+
+    .project-thumbnail img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 5px;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .download-resume {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .download-resume a {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .project-thumbnail {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Portfolio</h1>
+    <img class="profile-picture" src="path/to/your/picture.jpg" alt="Profile Picture">
+    <div class="projects">
+      <div class="project-thumbnail">
+        <img src="path/to/project1.jpg" alt="Project 1">
+      </div>
+      <div class="project-thumbnail">
+        <img src="path/to/project2.jpg" alt="Project 2">
+      </div>
+      <div class="project-thumbnail">
+        <img src="path/to/project3.jpg" alt="Project 3">
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="download-resume">
+      <a href="path/to/resume.pdf" download>Download Resume</a>
+    </div>
+  </div>
+</body>
+</html>
