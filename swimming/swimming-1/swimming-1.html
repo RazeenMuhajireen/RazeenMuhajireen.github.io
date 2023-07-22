@@ -56,17 +56,28 @@
 
     .project-media-item {
       margin: 10px;
-      width: 50%; /* Set the width to 50% to make images and videos fit half the screen */
+      width: 100%; /* Set the width to 100% to fit the container width */
     }
 
     .project-media-item img,
     .project-media-item iframe {
-      width: 100%;
-      height: auto;
+      width: 100%; /* Set width to 100% to fit the container width */
+      height: auto; /* Maintain aspect ratio */
     }
 
-    .project-media-item iframe {
-      height: 50vh; /* Set the height to 50% of the viewport height */
+    .video-container {
+      position: relative;
+      padding-bottom: 75%; /* 4:3 aspect ratio (4 / 3 * 100) */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
     .project-description {
@@ -74,8 +85,10 @@
       margin-top: 40px;
     }
 
-    iframe {
-      max-width: 560px;
+    @media screen and (max-width: 768px) {
+      .project-media-item {
+        width: 100%; /* Set the width to 100% for mobile devices to fit the screen width */
+      }
     }
   </style>
 </head>
@@ -95,7 +108,9 @@
 
       <!-- YouTube Video 1 -->
       <div class="project-media-item">
-        <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
 
       <!-- Picture 2 -->
@@ -105,13 +120,15 @@
 
       <!-- YouTube Video 2 -->
       <div class="project-media-item">
-        <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
       <!-- Add more pictures, videos, or other media items as needed -->
     </div>
 
     <div class="project-description">
-      <p>This is a sample project description. You can provide details about your project here.</p>
+      <p>This is a sample project description. You can provide details about your project here. This is a sample project description. You can provide details about your project here This is a sample project description. You can provide details about your project here This is a sample project description. You can provide details about your project here</p>
     </div>
   </div>
 </body>
