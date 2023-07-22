@@ -1,26 +1,118 @@
-<div>
-    <div class="video_wrapper">
-    <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/ior_B2OD5uQ" allowfullscreen allow="autoplay">
-    </iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Project Page</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .back-to-home {
+      display: block;
+      text-align: center;
+      margin-top: 40px; /* Increase the margin to add more space under the button */
+      margin-bottom: 40px; /* Add some space below the button */
+    }
+
+    .back-to-home a {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block; /* Add this to ensure the margin is applied correctly */
+      transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add transitions for smooth effects */
+    }
+
+    .back-to-home a:hover {
+      background-color: #111; /* Change background color on hover */
+      color: #fff; /* Change text color on hover */
+      transform: scale(1.2); /* Scale the button when hovering */
+    }
+
+    .project-media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project-media-item {
+      margin: 10px;
+      width: 50%; /* Set the width to 50% to make images and videos fit half the screen */
+    }
+
+    .project-media-item img,
+    .project-media-item iframe {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-media-item iframe {
+      height: 50vh; /* Set the height to 50% of the viewport height */
+    }
+
+    .project-description {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    iframe {
+      max-width: 560px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sample Project</h1>
+
+    <div class="back-to-home">
+      <a href="../../index.html">Back to Home</a>
     </div>
 
-    <span class="lb">Being a Sprinter for over 10 years of my swimming journey, stroke count played a major role in my competitions.
+    <div class="project-media">
+      <!-- Picture 1 -->
+      <div class="project-media-item">
+        <img src="img.jpg" alt="Picture 1">
+      </div>
 
-What is a stroke count in swimming?
+      <!-- YouTube Video 1 -->
+      <div class="project-media-item">
+        <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-One stroke is a full arm cycle. In other words, count “one” when the right arm goes in and then “two” when the left arm goes in, and so on.
+      <!-- Picture 2 -->
+      <div class="project-media-item">
+        <img src="img.jpg" alt="Picture 2">
+      </div>
 
-“The East Germans first used biomechanics. This meant that rather than guessing about technique and form, they could apply changes to athletic performance based on science.” -Bill Toomey
+      <!-- YouTube Video 2 -->
+      <div class="project-media-item">
+        <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Add more pictures, videos, or other media items as needed -->
+    </div>
 
-In swimming, proper biomechanics are essential for success. Biomechanical factors for swimming are numerous, but one of the main variable for a meaningful analysis is the stroke rate. It is well-accepted sprinters have a higher stroke rate. The vast majority of elite competitive swimmers knows how many strokes they take at varying speeds. They know that at cruising speed they take 20 strokes per 50m. And that at sprint speed they take 36. Knowing these details in practice helps to avoid over-gliding in races which makes efficient sprinting.
-
-Lower stroke frequency helps you to maintain a lower muscle stiffness as well as increase the ability to store and release energy production when required during the race. This is called efficient swimming.
-
-But tracking the stroke count is one of the major challenges faced by elite swimmers.
-
-Here is my way of tracking the stroke count with the help of machine learning and video analytic.
-    </span>
-
-    <span class="lb"> more about swimming stroke counter........
-    </span>
-</div>
+    <div class="project-description">
+      <p>This is a sample project description. You can provide details about your project here.</p>
+    </div>
+  </div>
+</body>
+</html>

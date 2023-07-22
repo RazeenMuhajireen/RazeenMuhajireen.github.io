@@ -1,28 +1,118 @@
-<div>
-    <div class="video_wrapper">
-        <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/u1Z8FbNliNM" allowfullscreen allow="autoplay">
-    </iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Project Page</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .back-to-home {
+      display: block;
+      text-align: center;
+      margin-top: 40px; /* Increase the margin to add more space under the button */
+      margin-bottom: 40px; /* Add some space below the button */
+    }
+
+    .back-to-home a {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block; /* Add this to ensure the margin is applied correctly */
+      transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add transitions for smooth effects */
+    }
+
+    .back-to-home a:hover {
+      background-color: #111; /* Change background color on hover */
+      color: #fff; /* Change text color on hover */
+      transform: scale(1.2); /* Scale the button when hovering */
+    }
+
+    .project-media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project-media-item {
+      margin: 10px;
+      width: 50%; /* Set the width to 50% to make images and videos fit half the screen */
+    }
+
+    .project-media-item img,
+    .project-media-item iframe {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-media-item iframe {
+      height: 50vh; /* Set the height to 50% of the viewport height */
+    }
+
+    .project-description {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    iframe {
+      max-width: 560px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sample Project</h1>
+
+    <div class="back-to-home">
+      <a href="../../index.html">Back to Home</a>
     </div>
 
-    <span class="lb">At present, there are quite a number of fish feeders available in the aquarium market.
-        These are called automatic fish feeders, which is a device that could be used to automatically feed the fish
-        in a predetermined time. In a technical way, it is to control the fish feeding activity by using a fish feeder
-        that consist of a mechanical system and an electrical system to form a device instead of manually feeding the
-        fish by hand. This device is suitable for fish keepers who sometimes tend to forget to feed the fish as well as
-        who are away from home for a long time. In fact, I too wanted to purchase one of these automatic fish feeders
-        which would solve the problem of feeding my fish when I am away from home for days.
-    </span>
-    <span class="lb">
-        Looking at automatic fish feeders available in the market, I felt that none of these products will satisfy my
-        growing requirements and be able to customize. I wanted a device that could work as an agent where communication
-        to the device is possible remotely. My growing requirements needed a device that could remotely control the
-        feeding of the fish and also give updates of the feeding, remotely control the temperature as well as lighting,
-        give updates of the water quality as well as water level and also in future to see my tank remotely which would
-        be useful to monitor the health of the fish. So, I decided to make my own device that is capable of handling all
-        these variables.I chose ESP32 micro-controller along with a SIM800L GSM module which could establish the connectivity
-        using WiFi, Bluetooth, GPRS or GSM. The reason i chose this combination is to have a stable connection to the
-        device at all times. I purchased a servo motor to achieve the mechanical function of feeding the fish. I also
-        got an OLED display to show the status of the system. As a start, I wanted to immediately fix the fish feeding
-        mechanism since I was travelling away for the weekend. I integrated the components and tested the function of remotely feeding the fish.
-    </span>
-</div>
+    <div class="project-media">
+      <!-- Picture 1 -->
+      <div class="project-media-item">
+        <img src="img.jpg" alt="Picture 1">
+      </div>
+
+      <!-- YouTube Video 1 -->
+      <div class="project-media-item">
+        <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Picture 2 -->
+      <div class="project-media-item">
+        <img src="img.jpg" alt="Picture 2">
+      </div>
+
+      <!-- YouTube Video 2 -->
+      <div class="project-media-item">
+        <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Add more pictures, videos, or other media items as needed -->
+    </div>
+
+    <div class="project-description">
+      <p>This is a sample project description. You can provide details about your project here.</p>
+    </div>
+  </div>
+</body>
+</html>

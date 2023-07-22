@@ -1,35 +1,118 @@
-<div>
-    <div class="video_wrapper">
-        <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/2stHm3z7KsU" allowfullscreen allow="autoplay">
-    </iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Project Page</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .back-to-home {
+      display: block;
+      text-align: center;
+      margin-top: 40px; /* Increase the margin to add more space under the button */
+      margin-bottom: 40px; /* Add some space below the button */
+    }
+
+    .back-to-home a {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block; /* Add this to ensure the margin is applied correctly */
+      transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add transitions for smooth effects */
+    }
+
+    .back-to-home a:hover {
+      background-color: #111; /* Change background color on hover */
+      color: #fff; /* Change text color on hover */
+      transform: scale(1.2); /* Scale the button when hovering */
+    }
+
+    .project-media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project-media-item {
+      margin: 10px;
+      width: 50%; /* Set the width to 50% to make images and videos fit half the screen */
+    }
+
+    .project-media-item img,
+    .project-media-item iframe {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-media-item iframe {
+      height: 50vh; /* Set the height to 50% of the viewport height */
+    }
+
+    .project-description {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    iframe {
+      max-width: 560px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sample Project</h1>
+
+    <div class="back-to-home">
+      <a href="../../index.html">Back to Home</a>
     </div>
 
+    <div class="project-media">
+      <!-- Picture 1 -->
+      <div class="project-media-item">
+        <img src="img.jpg" alt="Picture 1">
+      </div>
 
-    <span class="lb">"IoT Devices" have become a trend in most of the markets these days especially with appliances you use in day to day life. Is it too complicated to make these devices?. If you are interested in finding out, Read on!
+      <!-- YouTube Video 1 -->
+      <div class="project-media-item">
+        <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-Lately, we have been hearing a lot about the “Internet of Things” (IoT), and wondering what to make of it. This I call "The IoT revolution!". What is this IoT revolution?. IoT generally refers to the extension of computing and network capabilities to devices and sensors that are not considered as computers, which enables them to make machine-to-machine interactions with minimal or no human input.
-    </span>
+      <!-- Picture 2 -->
+      <div class="project-media-item">
+        <img src="img.jpg" alt="Picture 2">
+      </div>
 
-    <span class="lb">The question is, "Is it too complicated to make these devices?" In my honest opinion, learning to create these fancy things are not very hard. Its quite easy actually. The key is to keep the basic theories of electricity, electronics and software well understood.
+      <!-- YouTube Video 2 -->
+      <div class="project-media-item">
+        <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Add more pictures, videos, or other media items as needed -->
+    </div>
 
-Let me break down the main components of these IoT devices with the following diagram.</span>
-
-    <span class="lb">image here</span>
-
-    <span class="lb">Sensors : Sensors are the ones that makes the product very unique and also adding value to it. There can be one sensor or multiple sensors connected to a single device. The job of the sensor is basically just collect raw data. Examples of such sensors are, IR sensor, Ultrasound sensor, heart rate sensor, Vibration sensor and Temperature sensor. The operation of any sensor is quite simple. Usage is quite simple! You provide power to the sensor with given ratings for the sensor, then connect the data lines to your microcontroller. These data lines what I am talking in the context of sensors are just wires which can be Serial, an analog reading or a Bus (I2C, SPI, etc.). Every sensor has its own datasheet which describes on how to interpret the values.
-
-Actuators : An actuator turns a control signal into mechanical action. In the context of IoT device, the most common actuator used is a relay. Relays acts as switches where, when you provide an electrical signal, a switch can be controlled. There are relays with different rating and different functions, but we are trying to understand the basic of how it works. The following image shows the basic operation of a relay. Basically you provide a controlled signal to the relay, the coil charges making it have magnetic properties, the relay switch closes, current flows, Appliance works!. This is the theory used in almost every smart switch. Simple right?</span>
-
-    <span class="lb">Microcontroller: A microcontroller is the main component in an IoT device. Grab data from sensors, interpret the data, process/store the data, control the actuators, all these are done by the microcontroller.
-
-Gateway: Can be described as a device used to connect two different networks, Basically a connection to the internet.
-
-Cloud Server : This is where you store the data collected from sensors or any processed data.
-
-Web/Mobile App: Simply, a user friendly app to communicate to your IoT device. Having a dashboard from the data stored in the cloud server will make it look very fancy!
-
-That is all you need to know to make these devices! It isn't too complicated right ? :D
-
-During the lock-down times, I too had a chance to create something for my use at home after I shifted few things in my living room. I had trouble controlling a power outlet due to a table blocking it. So I created this smart power outlet with the components I had at home to control the regular power socket. The following video shows a demonstration on how this device can be used. Now, not only I can control this power outlet from distance just with my phone, But I also can control this from anywhere in the world!
-    </span>
-</div>
+    <div class="project-description">
+      <p>This is a sample project description. You can provide details about your project here.</p>
+    </div>
+  </div>
+</body>
+</html>

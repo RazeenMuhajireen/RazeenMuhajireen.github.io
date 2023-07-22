@@ -89,6 +89,12 @@
       margin-bottom: 5px;
     }
 
+    .project-description {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
     .social-icons {
       text-align: center;
       margin-top: 20px;
@@ -107,10 +113,39 @@
       transform: scale(1.2); /* Scale the icons when hovering */
     }
 
+    .navigation {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navigation li {
+      margin: 0 10px;
+    }
+
+    .navigation li a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: transparent; /* Set background color to transparent */
+      transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease; /* Add transitions for smooth effects */
+    }
+
+    /* On hover, change the color and increase font size */
+    .navigation li a:hover {
+      color: #333; /* Change text color on hover */
+      font-size: 20px; /* Increase font size on hover */
+    }
+
     .download-resume {
       display: block;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 40px; /* Increase the margin to add more space under the button */
+      margin-bottom: 40px; /* Add some space below the button */
     }
 
     .download-resume a {
@@ -120,6 +155,14 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      display: inline-block; /* Add this to ensure the margin is applied correctly */
+      transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add transitions for smooth effects */
+    }
+
+    .download-resume a:hover {
+      background-color: #111; /* Change background color on hover */
+      color: #fff; /* Change text color on hover */
+      transform: scale(1.2); /* Scale the button when hovering */
     }
 
     @media screen and (max-width: 768px) {
@@ -127,12 +170,23 @@
         width: 100%;
       }
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav>
+      <ul class="navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#swimming">Swimming</a></li>
+      </ul>
+    </nav>
     <img class="profile-picture" src="pictures/Razeen_Muhajireen.JPG" alt="Profile Picture">
-    <h1>Razeen Muhajireen</h1>
+    <h1 id="home">Razeen Muhajireen</h1>
     <h2>Software Engineer | Data Analyst | Project Manager</h2>
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/razeen-muhajireen/" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
@@ -142,45 +196,68 @@
       <a href="https://www.youtube.com/@razeenmuhajireen1799" target="_blank"><img src="icons/youtube.png" alt="Youtube"></a>
     <!-- Add more social media icons as needed -->
     </div>
-    <h3>Projects</h3>
+    <h3 id="projects">Projects</h3>
     <div class="projects">
-      <a href="projects/project-1/project-1.html" target="_blank" class="project-thumbnail">
+      <a href="projects/project-1/project-1.html" class="project-thumbnail">
         <img src="projects/project-1/img.jpg" alt="Project 1">
         <div class="project-overlay">
             <div class="project-title">Project 1</div>
+            <div class="project-description">A short description A short description A short description A short description A short description</div>
         </div>
       </a>
-      <a href="projects/project-2/project-2.html" target="_blank" class="project-thumbnail">
+      <a href="projects/project-2/project-2.html" class="project-thumbnail">
         <img src="projects/project-2/img.jpg" alt="Project 2">
         <div class="project-overlay">
             <div class="project-title">Project 2</div>
         </div>
       </a>
-      <a href="projects/project-3/project-3.html" target="_blank" class="project-thumbnail">
+      <a href="projects/project-3/project-3.html" class="project-thumbnail">
         <img src="projects/project-3/img.jpg" alt="Project 3">
         <div class="project-overlay">
             <div class="project-title">Project 3</div>
         </div>
       </a>
-      <a href="projects/project-4/project-4.html" target="_blank" class="project-thumbnail">
+      <a href="projects/project-4/project-4.html" class="project-thumbnail">
         <img src="projects/project-4/img.jpg" alt="Project 4">
         <div class="project-overlay">
             <div class="project-title">Swimming Stroke Counter</div>
         </div>
       </a>
-      <a href="projects/project-5/project-5.html" target="_blank" class="project-thumbnail">
+      <a href="projects/project-5/project-5.html" class="project-thumbnail">
         <img src="projects/project-5/img.jpg" alt="Project 5">
         <div class="project-overlay">
             <div class="project-title">Project 5</div>
         </div>
       </a>
-      <a href="projects/project-6/project-6.html" target="_blank" class="project-thumbnail">
+      <a href="projects/project-6/project-6.html" class="project-thumbnail">
         <img src="projects/project-6/img.jpg" alt="Project 6">
         <div class="project-overlay">
             <div class="project-title">Automated Fish Feeder</div>
         </div>
       </a>
     </div>
+    <h3 id="swimming">Swimming</h3>
+    <div class="projects">
+      <a href="swimming/swimming-1/swimming-1.html" class="project-thumbnail">
+        <img src="swimming/swimming-1/img.jpg" alt="My Swimming">
+        <div class="project-overlay">
+            <div class="project-title">My Swimming</div>
+        </div>
+      </a>
+      <a href="swimming/swimming-2/swimming-2.html" class="project-thumbnail">
+        <img src="swimming/swimming-2/img.jpg" alt="Special Olympics">
+        <div class="project-overlay">
+            <div class="project-title">Special Olympics</div>
+        </div>
+      </a>
+      <a href="swimming/swimming-2/swimming-2.html" class="project-thumbnail">
+        <img src="swimming/swimming-2/img.jpg" alt="Special Olympics">
+        <div class="project-overlay">
+            <div class="project-title">Special Olympics</div>
+        </div>
+      </a>
+    </div>
+
     <div class="download-resume">
       <a href="resume/Resume_Razeen_Muhajireen.pdf" download>Download Resume</a>
     </div>
