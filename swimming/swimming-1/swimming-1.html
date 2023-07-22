@@ -55,6 +55,7 @@
     }
 
     .project-media-item {
+      position: relative;
       margin: 10px;
       width: 100%; /* Set the width to 100% to fit the container width */
     }
@@ -63,6 +64,17 @@
     .project-media-item iframe {
       width: 100%; /* Set width to 100% to fit the container width */
       height: auto; /* Maintain aspect ratio */
+    }
+
+    .project-media-item figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 5px 0;
+      color: #fff;
     }
 
     .video-container {
@@ -81,8 +93,19 @@
     }
 
     .project-description {
-      text-align: center;
+      text-align: left;
       margin-top: 40px;
+    }
+
+    .media-description {
+      text-align: left;
+      margin-top: 5px;
+      margin-bottom: 40px;
+    }
+
+    .media-title {
+      text-align: center;
+      margin-top: 10px;
     }
 
     @media screen and (max-width: 768px) {
@@ -94,42 +117,71 @@
 </head>
 <body>
   <div class="container">
-    <h1>Sample Project</h1>
+    <h1>My Swimming</h1>
 
     <div class="back-to-home">
       <a href="../../index.html">Back to Home</a>
     </div>
 
+    <div class="project-description">
+      <p>Swimming has been an integral part of my life since my early years, with credit due to my mother for initiating my journey in this aquatic discipline. At the age of 9, I took my first strokes and swiftly developed a deep passion for the sport. By the time I was 10, I embraced a significant challenge by partaking in a formidable 2km sea swimming event, which further fueled my determination. </p>
+      <p>Throughout my schooling years, I consistently excelled in swimming, securing numerous championship victories that served as testament to my commitment and skill in the water. These achievements not only brought me personal gratification but also garnered recognition within the sporting community. Consequently, I had the esteemed privilege of representing the esteemed Sri Lanka Navy, solidifying my dedication to the art of swimming at a competitive level.</p>
+      <p>With my unwavering dedication to the sport of swimming, I have had the privilege of participating in numerous national and international events, which have significantly enriched my journey as an athlete.</p>
+      <p>As I continued to excel in the pool during my formative years, I garnered attention within the swimming community and earned the opportunity to represent my country on a national level. This platform allowed me to showcase my abilities and compete alongside some of the finest swimmers in the nation.</p>
+      <p>Furthermore, my commitment to continuous improvement and the pursuit of excellence granted me the honor of representing my country in various international competitions. Participating in these prestigious events provided me with invaluable exposure to diverse swimming styles, unparalleled competition, and the chance to learn from world-class athletes.</p>
+      <p>These national and international experiences have been instrumental in shaping me not only as a competitive swimmer but also as an individual. They have taught me the importance of sportsmanship, camaraderie, and resilience in the face of formidable challenges.</p>
+    </div>
+    <h2>Achievements:</h2>
+    <ul>
+      <li>Sri Lanka Navy Swimmer - 2012 to 2016</li>
+      <li>Swimming Colours Award, Sri Lanka Navy - 2012 - 2014</li>
+      <li>Swimming Captain, Sri Lanka Institute of Information and Technology - 2013 – 2015</li>
+      <li>Silver Award - Best Sportsman, Lyceum International School - 2011</li>
+      <li>Swimming Captain, Lyceum International School -2010 – 2011</li>
+      <li>Sri Lanka Team Swimmer, 32nd Chulabhorn Aquatic Club Tri-Nation Swimming Championship, Kasetsart University, Bangkok - 2010</li>
+      <li>Sri Lanka Team Swimmer, Swim Life, India – Sri Lanka Swim Meet - 2009</li>
+      <li> Swimming Colours Award, D. S. Senanayake College - 2004 - 2008 </li>
+    </ul>
+
     <div class="project-media">
       <!-- Picture 1 -->
       <div class="project-media-item">
-        <img src="img.jpg" alt="Picture 1">
+        <img src="swim_4.jpg" alt="Picture 1">
+        <figcaption>Sri Lanka Navy Relay Team - 2012</figcaption>
       </div>
+      <div class="media-description"> From Left: Shaan Dias, Uvindu Perera, Razeen Muhajireen, Isaac Prince</div>
 
       <!-- YouTube Video 1 -->
       <div class="project-media-item">
         <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/oG2ygbWxbXg" frameborder="0" allowfullscreen></iframe>
+          <figcaption>Sri Lanka Relay Carnivals 2012 Open Medley Relay</figcaption>
         </div>
       </div>
+      <div class="media-description">1st Place - Sri Lanka Navy - I did the last lap</div>
 
       <!-- Picture 2 -->
       <div class="project-media-item">
-        <img src="img.jpg" alt="Picture 2">
+        <img src="swim_5.jpg" alt="Picture 2">
+        <figcaption>Sri Lanka Institute of Information and Technology Colours Night 2016 - Swimming Colours Award</figcaption>
       </div>
 
       <!-- YouTube Video 2 -->
       <div class="project-media-item">
         <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/W7UNfbAraNs" frameborder="0" allowfullscreen></iframe>
+          <figcaption>Sri Lanka Nationals 2012 Medley Relay</figcaption>
         </div>
       </div>
+      <div class="media-description">1st Place - Sri Lanka Navy - I did the last lap - Sri Lanka Navy team breaks National record by 3 seconds.</div>
       <!-- Add more pictures, videos, or other media items as needed -->
+
+      <div class="project-media-item">
+        <img src="mom_4.jpg" alt="Picture 2">
+        <figcaption>Receiving the award for the Outstanding swimming captain at Inter-Internationals Swimming Chapionships 2011 by my Mom.</figcaption>
+      </div>
     </div>
 
-    <div class="project-description">
-      <p>This is a sample project description. You can provide details about your project here. This is a sample project description. You can provide details about your project here This is a sample project description. You can provide details about your project here This is a sample project description. You can provide details about your project here</p>
-    </div>
   </div>
 </body>
 </html>
