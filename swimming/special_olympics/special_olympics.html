@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample Project Page</title>
+  <title>Special Olympics</title>
   <style>
     body {
       background-color: #111;
@@ -55,6 +55,7 @@
     }
 
     .project-media-item {
+      position: relative;
       margin: 10px;
       width: 100%; /* Set the width to 100% to fit the container width */
     }
@@ -63,6 +64,17 @@
     .project-media-item iframe {
       width: 100%; /* Set width to 100% to fit the container width */
       height: auto; /* Maintain aspect ratio */
+    }
+
+    .project-media-item figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 5px 0;
+      color: #fff;
     }
 
     .video-container {
@@ -81,8 +93,19 @@
     }
 
     .project-description {
-      text-align: center;
+      text-align: left;
       margin-top: 40px;
+    }
+
+    .media-description {
+      text-align: left;
+      margin-top: 5px;
+      margin-bottom: 40px;
+    }
+
+    .media-title {
+      text-align: center;
+      margin-top: 10px;
     }
 
     @media screen and (max-width: 768px) {
@@ -94,42 +117,36 @@
 </head>
 <body>
   <div class="container">
-    <h1>Sample Project</h1>
+    <h1>Special Olympics</h1>
 
     <div class="back-to-home">
       <a href="../../index.html">Back to Home</a>
     </div>
 
-    <div class="project-media">
+    <div class="project-description">
+      <p>Throughout my Special Olympics coaching journey, I've had the privilege of training over 300 coaches and 2000 special athletes, along with 1000 unified partners in Sri Lanka. As a dedicated volunteer since 2015, I've participated in national tournaments as the Swimming coach and underwent international training for intellectually disabled sports. Handling children with different abilities, including blind athletes, has been a transformative experience. Among my proudest achievements, I coached a blind child to swim and empowered a hyperactive 8-year-old to excel in the water, reaffirming the value of inclusivity and the boundless potential of every athlete.</p>
+    </div>
+    <h2>Certifications:</h2>
+    <ul>
+      <li>Special Olympics Unified Sports Coaching Course - 2023 </li>
+      <li>Unfied Sports for Special Olympics Youth Leaders - 2023 </li>
+      <li>Training for Sports Performance - Singapore - 2014 </li>
+
+      <div class="project-media">
+        <div class="project-media-item">
+          <img src="so_3.jpg" alt="Picture 1">
+          <figcaption>At Training for Sports Performance, Singapore - 2014</figcaption>
+        </div>
+        <div class="media-description"> Me presenting the long term goals for Special Olympics Sri Lanka</div>
+
       <!-- Picture 1 -->
       <div class="project-media-item">
-        <img src="img.jpg" alt="Picture 1">
+        <img src="so_2.jpg" alt="Picture 1">
+        <figcaption>At Training for Sports Performance, Singapore - 2014</figcaption>
       </div>
+      <div class="media-description"> From Left: Uvindu Perera (Coach - Sri Lanka), Aase Torheim (Vice president games operations - Special Olympics), Me</div>
 
-      <!-- YouTube Video 1 -->
-      <div class="project-media-item">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
 
-      <!-- Picture 2 -->
-      <div class="project-media-item">
-        <img src="img.jpg" alt="Picture 2">
-      </div>
-
-      <!-- YouTube Video 2 -->
-      <div class="project-media-item">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/nAeEiqHIsnc" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <!-- Add more pictures, videos, or other media items as needed -->
-    </div>
-
-    <div class="project-description">
-      <p>This is a sample project description. You can provide details about your project here. This is a sample project description. You can provide details about your project here This is a sample project description. You can provide details about your project here This is a sample project description. You can provide details about your project here</p>
-    </div>
   </div>
 </body>
 </html>
