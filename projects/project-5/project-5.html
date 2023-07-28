@@ -55,6 +55,7 @@
     }
 
     .project-media-item {
+      position: relative;
       margin: 10px;
       width: 100%; /* Set the width to 100% to fit the container width */
     }
@@ -63,6 +64,17 @@
     .project-media-item iframe {
       width: 100%; /* Set width to 100% to fit the container width */
       height: auto; /* Maintain aspect ratio */
+    }
+
+    .project-media-item figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 5px 0;
+      color: #fff;
     }
 
     .video-container {
@@ -85,6 +97,10 @@
       margin-top: 40px;
     }
 
+    li {
+    padding-bottom: 10px; /* Adjust the value as per your desired spacing */
+    }
+
     @media screen and (max-width: 768px) {
       .project-media-item {
         width: 100%; /* Set the width to 100% for mobile devices to fit the screen width */
@@ -101,8 +117,36 @@
     </div>
 
     <div class="project-description">
-      <p>Descripion on container yard management system</p>
+      <p>The Container Yard Management System is a groundbreaking project designed to streamline and optimize the management of containers within a vast container yard. The primary challenge addressed by this system was the lack of accurate tracking and location management for containers, leading to time-consuming retrieval processes and excessive resource wastage, especially in forklift operations.</p>
     </div>
+    <ul>
+
+      <li>Significantly Improved Efficiency: The implementation of the Container Yard Management System led to a substantial improvement in overall efficiency. Accurate tracking of container locations and optimized forklift movements reduced the time taken for container retrieval, resulting in faster turnaround times.</li>
+      <li>Reduced Resource Consumption: With precise tracking and optimized operations, the system drastically reduced resource consumption, including fuel for forklift operations, leading to cost savings and a more sustainable approach.</li>
+      <li>Enhanced Space Utilization: By using laser sensors to measure container drop heights and integrating this data into the system, container stacking was optimized, resulting in improved space utilization within the yard.</li>
+      <li>Real-Time Insights: The system provided real-time insights into container movements and yard utilization, empowering decision-makers with valuable data for better planning and resource allocation.</li>
+      <li>Streamlined Data Analysis: The use of Python and data analysis techniques allowed for in-depth analysis of container movement patterns and yard utilization, facilitating data-driven decision-making.</li>
+    </ul>
+    <div class="project-description"><div class="project-description">
+      <p>Key Features and Technologies Used:</p>
+    </div>
+       <ul>
+         <li>3D Model Creation: A sophisticated 3D model of the container yard was developed and integrated into the application to provide a visual representation of the yard's layout.</li>
+
+         <li>Image Processing: Leveraged advanced image processing techniques to accurately track container numbers, enabling efficient container identification and monitoring.</li>
+
+         <li>GPS and WiFi Triangulation: Implemented GPS and WiFi triangulation technologies to precisely track forklift movements within the yard, allowing for real-time monitoring of container handling operations.</li>
+
+         <li>Laser Sensors: Utilized laser sensors to measure the height at which containers were dropped, ensuring optimal stacking and maximizing yard space utilization.</li>
+
+         <li>Database Management: Data from various sources, including 3D models, image processing, GPS, and laser sensors, was collected, processed, and stored in a well-structured database.</li>
+
+         <li>SQL and PostgreSQL: Employed SQL and PostgreSQL as the primary database technologies to handle the vast amount of container and tracking data effectively.</li>
+
+         <li>Python: Utilized Python for developing the application's backend logic, data analysis, and scripting tasks.</li>
+
+         <li>Linux Scripting: Employed Linux scripting to automate various processes and enhance the system's efficiency and reliability.</li>
+       </ul>
 
     <div class="project-media">
       <!-- Picture 1 -->
@@ -112,7 +156,13 @@
 
       <!-- Picture 2 -->
       <div class="project-media-item">
-        <img src="img.jpg" alt="Picture 2">
+        <img src="container2.jpg" alt="Picture 2">
+        <figcaption>Testing the UI created for forklift drivers.</figcaption>
+      </div>
+
+       <!-- Picture 2 -->
+      <div class="project-media-item">
+        <img src="container3.jpg" alt="Picture 3">
       </div>
 
       <!-- Add more pictures, videos, or other media items as needed -->
